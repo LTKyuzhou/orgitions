@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+		<script src="JS/jquery.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="JS/DSC-json.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/DSCindex.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部开始-->
+		<div id="header" class="w100">
+			<div class="header">
+				<!--头部里边的鼠标触碰事件-->
+				<div class="box box1">
+					<div style="margin-top: 10px;">全部商品分类</div>
+					<ul id="headnav" class="headnav"><!-- json引入--></ul>
+					<div class="pox" id="pox1"><!--json引入--></div>
+				</div>
+				<!--头部剩下的内容-->
+				<div class="thelast">
+					<div><input type="text" placeholder="手机"/></div>
+					<div>搜商品</div>
+					<div>搜店铺</div>
+					<div>登录|注册</div>
+					<div><i class="icon iconfont icon-Cart-Done red"></i></div>
+				</div>
+				
+			</div>
+		</div>	
+		
+		<!--主体部分开始-->
+		<div class="container w100">
+			<!--广告部分-->
+			<div class="advertise w100">
+				<div>
+					<img src="DSCmallimg/1516576845009789749.jpg"/>
+					<div class="chahao"><i class="icon iconfont icon-chahao chahao"></i></div>
+				</div>
+			</div>
+			<div id="container">
+				<div>
+					<div><img src="DSCmallimg/shop_logo (1).gif"/></div>
+					<div class="box box2">
+						<div>全部商品分类</div>
+						<ul id="headnav2" class="headnav"><!-- json引入--></ul>
+						<div class="pox" id="pox2"><!-- json引入--></div>
+				    </div>
+				</div>
+				<div>
+					<div>
+						<div class="containerTitle">
+							<div id="add">
+								<div><i class="icon iconfont icon-dizhi add"></i></div>
+							    <div>郑州</div>
+							    <ul id="adds">			    	
+							    	<li class="nav1"></li>
+							    	<li class="scroll1"id="scroll1"></li>
+							    	<div class="line1"></div>
+							    	<div id="scrollbar">
+							    		<div id="thumb">
+							    			<div class="disabled">-</div>
+							    			<div class="disabled">-</div>
+							    			<div class="disabled">-</div>
+							    		</div>
+							    	</div>
+							    </ul>
+							</div>
+							<div>请登录</div>
+						    <div>免费注册</div>
+						    <div>
+						    	<nav id="navinner">
+						    		<div>网站导航</div>
+						    		<div><i class="icon iconfont icon-xiangxiatubiao xia"></i></div>
+						    		<div class="navinner">
+						    			<div class="left">
+						    				<dl>
+									    		<dt><h5>特色主题</h5></dt>
+									    		<dd><span>家用电器</span></dd>
+									    		<dd><span>手机数码</span></dd>
+									    		<dd><span>电脑办公</span></dd>
+									    	</dl>
+						    			</div>
+						    			<div class="right">
+						    				<dl>
+						    					<dt><h5>促销活动</h5></dt>
+						    					<dd>
+						    						<span>拍卖活动</span>
+						    						<span>共创商品</span>
+						    						<span>优惠活动</span>
+						    					</dd>
+						    					<dd>
+						    						<span>批发市场</span>
+						    						<span>超值礼包</span>
+						    						<span>优惠券</span>
+						    					</dd>
+						    				</dl>
+						    			</div>
+						    		</div>
+						    		<div class="line2"></div>
+						    	</nav>
+						    	<div>客户服务</div>
+						    	<div>我的收藏</div>
+						    	<div>我的浏览</div>
+						    	<div>我的订单</div>
+						    </div>
+						</div>
+					    <div class="containersearch">
+					    	<div><img src="DSCmallimg/ecsc-join.gif"/></div>
+					    	<div>
+					    		<div><input type="text" placeholder="Five Plus"/></div>
+						    	<div>搜商品</div>
+						    	<div>搜店铺</div>
+						    	<div class="gwc2">	
+						    		<div><i class="icon iconfont icon-Cart-Done cart"></i></div>
+						    		<div>我的购物车</div>
+						    		<div>0</div>
+						    	</div>
+						    	<div class="gwc1">
+					    			<div><img src="DSCmallimg/gwc.png"/></div>
+					    			<div>购物车中还没有商品，赶紧选购吧！</div>
+					    		</div>
+					    	</div>
+					    	<div style="clear: both;"></div>
+					    	<div class="font">
+				    			<span>周大福</span>
+				    			<span>内衣</span>
+				    			<span>Five Plus</span>
+				    			<span>手机</span>
+				    		</div>
+					    </div>
+					    <div class="containernav"id="containernav">	</div>
+					    <div class="containershow"id="containershow">
+					    	<div class="containerbanner" id="containerbanner">
+					    		<img src="DSCmallimg/banner1.jpg"/>
+					    		<img src="DSCmallimg/banner2.jpg"/>
+					    		<img src="DSCmallimg/banner3.jpg"/>
+					    		<ul class="containerbannerbtn">
+					    			<li class="active3"></li>
+					    			<li></li>
+					    			<li></li>
+					    		</ul>
+					    	</div>
+					    	<div class="containerbox">
+					    		<div class="box-top">
+					    			<div><img src="DSCmallimg/avatar.png"/></div>
+					    			<div>Hi,欢迎来到大商创演示...</div>
+					    			<div>
+					    				<div class="box-btn">请登录</div>
+					    			    <div class="box-btn box-btn2">我要开店</div>
+					    			</div>
+					    		</div>
+					    		<div class="news">
+					    			<div class="news1 news2">公告</div>
+						            <div class="news1">促销</div>
+						            <div style="clear: both;"></div>
+						            <ul>
+						            	<li class="active">
+						            		<p>服务店突破两千多家</p>
+						            		<p>我们成为中国最大家电零售B2..</p>
+						            		<p>三大国际品牌腕表签约</p>
+						            	</li>
+						            	<li>
+						            		<p>春季家装季,家电买一送一</p>
+						            		<p>抢百元优惠券，享4.22%活期</p>
+						            		<p>Macbook最高返50000消费..</p>
+						            	</li>
+						            </ul>    
+						            <div class="news1" style="width: 100px;margin-left: 5px;margin-top: 26px;">快捷入口</div>
+					    		</div>
+					    		<div style="clear: both;"></div>
+					            <div class="box-bottom" id="boxBottom"><!--json引入--></div>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<!--banner下边部分-->
+			<div class="dragon"><img src="DSCmallimg/1515957501674637307.png"/></div>
+			<div class="shopshow">
+				<div class="block1">
+					<div class="floor2 one" id="one">
+					    
+					</div>
+					<div class="floor2 two"id="two">
+						<div>
+							<div>好货大汇聚</div>
+							<div>周年庆第一波，每天限时五场秒杀</div>
+							<div>更多周年好货</div>
+						</div>
+						<div id="t"></div>
+					</div>s
+				</div>		
+				<div class="floor2 discount">
+					<div id="discount"></div>
+					<div id="discounts"></div>
+				</div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+				<div class="floor2"></div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>	
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <!--侧边栏-->
+	    <div>
+	    	
+	    </div>
+	    <div class="sider" id="sider">
+	    	<div id="siderFrist">
+	    		<i class="icon iconfont icon-icon- people"></i>
+	    		<nav class="arrow"></nav>
+	    		<div class="user">	
+                    <div>
+                        <div>
+                           <img src="DSCmallimg/touxiang.jpg"/>
+                        </div>
+                        <ul>
+                            <li>用户名：暂无</li>
+                            <li>级  别：暂无</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div>我的订单</div>
+                        <div>我的收藏</div>
+                    </div>                   
+               </div>
+	    	</div>
+	        <div>
+	        	<div class="sidersecond">
+	        		<i class="icon iconfont icon-gouwuche"></i>
+		        	<div>购物车</div>
+		        	<div>0</div>
+	        	</div>        	
+	        </div>
+	        <div id="sider3" class="siderm">
+	    		<i class="icon iconfont icon-dingdan"></i>
+	    		<nav class="arrow2 arrow3"></nav>
+	    		<div class="options options3">我的订单</div>
+	    	</div>
+	    	<div id="sider4" class="siderm">
+	    		<i class="icon iconfont icon-youhuiquan"></i>
+	    		<nav class="arrow2 arrow4"></nav>
+	    		<div class="options options4">优惠券</div>
+	    	</div>
+	    	<div id="sider5" class="siderm">
+	    		<i class="icon iconfont icon-renminbi1688"></i>
+	    		<nav class="arrow2 arrow5"></nav>
+	    		<div class="options options5">我的资产</div>
+	    	</div>
+	    	<div id="sider6" class="siderm">
+	    		<i class="icon iconfont icon-yanjing"></i>
+	    		<nav class="arrow2 arrow6"></nav>
+	    		<div class="options options6">我的足迹</div>
+	    	</div>
+	    	<div id="sider7" class="siderm">
+	    		<i class="icon iconfont icon-shoucang"></i>
+	    		<nav class="arrow2 arrow7"></nav>
+	    		<div class="options options7">我的收藏</div>
+	    	</div>
+	    	<div id="sider8" class="siderm">
+	    		<i class="icon iconfont icon-youxiang youxiang"></i>
+	    		<nav class="arrow2 arrow8"></nav>
+	    		<div class="options options8">邮箱订阅</div>
+	    	</div>
+	    	<div id="sider9" class="siderm">
+	    		<i class="icon iconfont icon-custom-service"></i> 		
+	    		<nav class="arrow2 arrow9"></nav>
+	    		<div class="options options9">邮箱订阅</div>
+	    	</div>
+	    	<div id="sider10" class="siderm">
+	    		<i class="icon iconfont icon-top"></i>
+	    	</div>
+	    </div>
+	    <!--购物车-->
+	    <div class="shopcar" id="shopcar">
+    		<div>
+    			<div>购物车</div>
+    			<div id="carclose"><i class="icon iconfont icon-chahao"></i></div>
+    		</div>
+    		<div>
+    			<div><img src="DSCmallimg/gwc.png"/></div>
+    			<div>购物车空空的，赶快去挑选心仪的商品吧~</div>
+    			<div><a href="index.html" style="color: red;">去首页看看</a></div>
+    		</div>
+    		<div>
+    			<div>
+    				<div>共0件商品</div><div>￥0.00</div>
+    			</div>
+    			<div style="clear: both;"></div>
+    			<div>去购物车结算</div>
+    		</div>
+    	</div>
+	    
+	        <!--轮播图下边东西-->
+	    
+	
+	
+	
+	</body>
+</html>
